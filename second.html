@@ -6,25 +6,37 @@
   <title>Conga Time</title>
   <style>
     body {
-      background-color: black;
+      background-color: #000;
+      color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
       margin: 0;
+      text-align: center;
+      overflow: hidden;
     }
-    img {
-      width: 300px;
+    .tenor-gif-embed {
+      max-width: 400px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Conga Music -->
   <audio autoplay loop>
     <source src="konga.mp3" type="audio/mp3" />
     Your browser does not support the audio element.
   </audio>
 
-  <img src="ditto-dancing.mp4" alt="Ditto dancing" />
+  <!-- Ditto GIF Embed -->
+  <div class="tenor-gif-embed" data-postid="19178361" data-share-method="host" data-aspect-ratio="0.665625" data-width="100%">
+    <a href="https://tenor.com/view/ditto-dance-gif-19178361">Ditto Dance GIF</a> from 
+    <a href="https://tenor.com/search/ditto+dance-gifs">Ditto Dance GIFs</a>
+  </div> 
+
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
 </body>
 </html>
