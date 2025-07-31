@@ -3,35 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conga!</title>
+  <title>Gotcha!</title>
   <style>
-    /* optional reset + background styles */
-    body { margin:0; padding:0; background:#000; color:#fff; font-family:sans-serif;
-           text-align:center; display:flex; flex-direction:column;
-           justify-content:center; height:100vh; }
-    .message { margin-bottom:1em; }
-    .gif-container { flex:1; display:flex; justify-content:center; align-items:center; }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1, p {
+      margin: 0.5em 0;
+    }
   </style>
+  <script>
+    // Load the second page after 8 seconds
+    setTimeout(() => {
+      window.location.href = 'second.html';
+    }, 8000);
+  </script>
 </head>
 <body>
-  <div class="message">
-    <h1>Thanks for wanting to see me naked 😳</h1>
-    <p>You make me blush... that's not happening 😉</p>
-    <p>Here's something better, coming right up:</p>
-  </div>
+  <h1>Thanks for wanting to see me naked</h1>
+  <p>You just made me blush 😳</p>
+  <p>This ain't gonna happen... but here's something for you in a sec...</p>
 
-  <div class="gif-container">
-    <!-- placeholder for animation -->
-    <div class="tenor-gif-embed" data-postid="18702778" data-share-method="host" data-aspect-ratio="1.78771" data-width="100%"><a href="https://tenor.com/view/yes-gif-18702778">Yes GIF</a>from <a href="https://tenor.com/search/yes-gifs">Yes GIFs</a>
-    </div> 
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-  </div>
-
-  <audio autoplay loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
-  </audio>
-
-  <!-- GoatCounter Tracking -->
+  <!-- GoatCounter tracking -->
   <script data-goatcounter="https://devilsxcite.goatcounter.com/count"
           async src="https://gc.zgo.at/count.js"></script>
 </body>
